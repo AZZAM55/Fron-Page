@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(238deg, rgba(0,0,0,0.5), #272a37 48%),url("./photo/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.big-wrapper {
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 15%;
+    background: none;
+    color: #ffffff;
+}
+
+.logo h3 {
+    margin-top: -50px;
+    margin-left: 65px;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 33px;
+    margin-left: -180px;
+}
+
+.links a {
+    display: flex;
+    margin-right: 90px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #6c7483;
+    font-weight: 600;
+}
+
+.container-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-left: -550px;
+
+}
+
+.showcase-area .start-h3 {
+    text-transform: uppercase;
+    color: #6c7483;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.showcase-area h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.showcase-area h1 span,
+.logo h3 span{
+    height: 10px;
+    width: 10px;
+    background-color: #1d90f5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.logo h3 span {
+    height: 5px;
+    width: 5px;
+}
+
+.showcase-area .log-h3 {
+    color: #6c7483;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.showcase-area .log-h3 .log-in {
+    text-decoration: none;
+    color: #1d90f5;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+
+.info,
+.input {
+    position: relative;
+    width: 600px;
+    margin-left: -10px;
+}
+
+.info  span ,
+.input  span{
+    flex-basis: 49%;
+    display: inline-block;
+    padding: 0;
+    margin-left: 5px;
+
+}
+
+.info span.lname{
+    left: 195px;
+}
+
+.info input,
+.input input{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    outline: #1d90f5;
+    background: #272a37;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.input input {
+    width: 62.5%;
+}
+
+.info span,
+.input span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 15px;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.info .input1:valid ~ .fname,
+.info .input1:focus ~ .fname,
+.input .input1:valid  ~ span,
+.input .input1:focus  ~ span {
+    color: #1d90f5;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 3px 10px;
+    background: #272a37;
+    border-left: 1px solid #1d90f5;
+    border-right: 1px solid #1d90f5;
+    letter-spacing: 0.2em;
+}
+
+
+.info  .input2:valid ~ .lname,
+.info  .input2:focus ~ .lname,
+.input .input2:valid  ~ span,
+.input .input2:focus  ~ span {
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 3px 10px;
+    background: #1d90f5;
+    color: #1d2b3a;
+    border-radius: 2px;
+    letter-spacing: 0.2em;
+}
+
+.info input:valid,
+.info input:focus,
+.input input:valid,
+.input input:focus{
+    border: 1px solid #1d90f5;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+button {
+    padding: 13px 29px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    /*letter-spacing: 1.5px;*/
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.bottom .left {
+    margin-right: 20px;
+    color: #fff;
+    background: #555b69;
+}
+
+.bottom .right {
+    background: #1d90f5;
+    color: #fff;
+
+}
+
+.info i {
+    position: absolute;
+    color: #989a9e;
+    margin-left: -35px;
+    margin-top: 12px;
+
+}
+
+.info i.right {
+    margin-left: -30px;
+}
+
+.input .email i,
+.input .password i {
+    position: absolute;
+    margin-left: -29px;
+    margin-top: 12px;
+    color: #989a9e;
+}
